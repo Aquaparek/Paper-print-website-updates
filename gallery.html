@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaperPrint - Gallery</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>PaperPrint</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Our Work</h1>
+                <div class="breadcrumbs">
+                    <a href="home.html">Home</a> / <span>Gallery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Introduction -->
+    <section class="gallery-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Showcasing Our Printing Excellence</h2>
+                    <p>Explore our gallery of recent projects to see the quality and versatility of our printing services. From business cards and brochures to custom apparel and promotional products, our work demonstrates our commitment to exceptional quality and attention to detail.</p>
+                    <p>Each project is a testament to our expertise in printing and our dedication to helping our clients communicate their message effectively through print. Browse through our gallery to find inspiration for your next printing project.</p>
+                </div>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="business-cards">Business Cards</button>
+                <button class="filter-btn" data-filter="brochures">Brochures</button>
+                <button class="filter-btn" data-filter="apparel">Custom Apparel</button>
+                <button class="filter-btn" data-filter="promotional">Promotional Items</button>
+                <button class="filter-btn" data-filter="events">Event Materials</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Business Cards -->
+                <div class="gallery-item" data-category="business-cards">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/f7/09/45/f709456f58c668796612f338968d4248.jpg" alt="Business cards design">
+                        <div class="gallery-overlay">
+                            <h3>Premium Business Cards</h3>
+                            <p>Embossed business cards with gold foil detailing for a luxury real estate agency.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1541956064527-8ec0d5337810?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="business-cards">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/0c/9e/4f/0c9e4ff7c8d88e2a9479811f5f80d0a0.jpg" alt="Minimalist business cards">
+                        <div class="gallery-overlay">
+                            <h3>Minimalist Design Cards</h3>
+                            <p>Clean, modern business cards for a technology startup.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1616006897093-5e4635c0de5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brochures -->
+                <div class="gallery-item" data-category="brochures">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/14/9f/0e/149f0efa4c009c0f7737c589dafceae8.jpg" alt="Marketing brochures">
+                        <div class="gallery-overlay">
+                            <h3>Tri-fold Brochure</h3>
+                            <p>Full-color brochure design and printing for a travel agency.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1582135739786-3b93828730f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="brochures">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/71/0f/42/710f42da1ad5ef172234e380c4e75a91.jpg" alt="Product catalog">
+                        <div class="gallery-overlay">
+                            <h3>Product Catalog</h3>
+                            <p>40-page product catalog with custom photography for a furniture manufacturer.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1583295125721-766a0088cd3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-item" data-category="apparel">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/fd/3a/8f/fd3a8fcbb00829fd3d61230c038bfc9f.jpg" alt="Custom t-shirt printing">
+                        <div class="gallery-overlay">
+                            <h3>Company T-shirts</h3>
+                            <p>Custom designed and printed t-shirts for a tech company team building event.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1533417379565-6104a6ce0fdd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="apparel">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/2e/36/26/2e3626806dc8bfdd3df2d681f0ebb334.jpg" alt="Custom beanies">
+                        <div class="gallery-overlay">
+                            <h3>Embroidered Beanies</h3>
+                            <p>Custom embroidered beanies for a winter sports team.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1556065326-49245be3631a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-item" data-category="promotional">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/0b/9d/ea/0b9dea674a5058a82ddd8348c7408caa.jpg" alt="Custom mugs">
+                        <div class="gallery-overlay">
+                            <h3>Branded Coffee Mugs</h3>
+                            <p>Custom printed mugs for corporate gifts.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1513094735900-8d3090e569a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="promotional">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/f6/96/20/f69620b5b7bbc15cd34c09d4caed36ab.jpg" alt="Custom notebooks">
+                        <div class="gallery-overlay">
+                            <h3>Promotional Notebooks</h3>
+                            <p>Custom designed notebooks with debossed logo for a marketing agency.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1552566626-2d907da7e195?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/04/cd/9c/04cd9ce3a6f36cc83af991163576f282.jpg" alt="Party invitations">
+                        <div class="gallery-overlay">
+                            <h3>Wedding Invitations</h3>
+                            <p>Custom designed and letterpress printed wedding invitation suite.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1583267746897-2cf415887172?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/d8/7d/86/d87d86e394454e1bb824f03b87a35261.jpg" alt="Corporate banners">
+                        <div class="gallery-overlay">
+                            <h3>Event Banners</h3>
+                            <p>Large format banners for a corporate conference.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1459180129673-eefb56f79b45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Items for All Categories -->
+                <div class="gallery-item" data-category="brochures">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/75/bf/55/75bf550c1734e451b158dc87a07eb5bd.jpg" alt="Restaurant menu">
+                        <div class="gallery-overlay">
+                            <h3>Restaurant Menu</h3>
+                            <p>Custom designed and printed menu for an upscale restaurant.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1594322436404-5a0526db4d13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="promotional">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/c0/c2/fa/c0c2fa168c6cc840f32b23eb4a9040d0.jpg" alt="Branded water bottles">
+                        <div class="gallery-overlay">
+                            <h3>Branded Water Bottles</h3>
+                            <p>Custom printed water bottles for a fitness center.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1587017539504-67cfbddac569?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="apparel">
+                    <div class="gallery-image">
+                        <img src="https://i.pinimg.com/736x/e4/2d/9a/e42d9a254c1bc87da7f5499d4575243a.jpg" alt="Custom hoodies">
+                        <div class="gallery-overlay">
+                            <h3>Team Hoodies</h3>
+                            <p>Custom designed and embroidered hoodies for a basketball team.</p>
+                            <button class="gallery-zoom-btn" data-image="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=800&q=80">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H11V6h7v7h-2V9.414z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modal-image" src="" alt="Enlarged gallery image">
+            <div class="modal-caption" id="modal-caption"></div>
+        </div>
+    </div>
+
+    
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Testimonials</h2>
+                <p>What our clients say about our work</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <p>PaperPrint delivered our marketing materials on time and with exceptional quality. The team was responsive and helped us refine our designs. Highly recommended!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&q=80" alt="Sarah Johnson">
+                            </div>
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Marketing Director, Innovate Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <p>We ordered custom t-shirts for our company retreat, and they exceeded our expectations. The quality of the print and fabric was outstanding, and our team loved them!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&q=80" alt="Michael Chen">
+                            </div>
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>HR Manager, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <p>As a small business owner, finding reliable printing services is crucial. PaperPrint has been my go-to for years. Their sustainable options align with our values, and the quality is always impeccable.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&q=80" alt="David Wilson">
+                            </div>
+                            <div class="author-info">
+                                <h4>David Wilson</h4>
+                                <p>Owner, Eco Café</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="prev-btn" aria-label="Previous testimonial">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg>
+                </button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next-btn" aria-label="Next testimonial">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact-cta" class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Contact us today to discuss your printing needs and bring your ideas to life.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>PaperPrint</h3>
+                    <p>Premium printing solutions for your business.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="services.html#logo-design">Logo Design</a></li>
+                            <li><a href="services.html#marketing-materials">Marketing Materials</a></li>
+                            <li><a href="services.html#personalized-products">Personalized Products</a></li>
+                            <li><a href="services.html#office-supplies">Office Supplies</a></li>
+                            <li><a href="services.html#party-supplies">Party Supplies</a></li>
+                            <li><a href="services.html#custom-clothing">Custom Clothing</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-column">
+                        <h4>Contact Us</h4>
+                        <address>
+                            <p>456 Print Hub</p>
+                            <p>Kampala, Uganda</p>
+                            <p>Phone: +256123456789</p>
+                            <p>Email: info@paperprint.com</p>
+                        </address>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="20" height="20"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                            <a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+                            <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PaperPrint. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.828l-4.95 4.95-1.414-1.414L12 8l6.364 6.364-1.414 1.414z"/></svg>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
